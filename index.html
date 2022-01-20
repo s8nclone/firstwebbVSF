@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSF</title>
+    <link rel="stylesheet" href="FirstWeb.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=serif&effect=glow|fire">
+</head>
+<div class="container">
+    <header class="headline">
+     <h1 title="My First Project" class="text-center" style="color:gold"><b>Vampire Smoke & Fashion</b></h1>
+     <p id="description" class="description text-center"><strong>All About Fashion and Herbs</strong></p> 
+     </header>
+     </div>
+     <div class="top-page" style="background-color: olivedrab; ">
+     <form><input type="text" name="searcbar" id="search" class="searchbar" placeholder="Enter your search">
+        <li class="log" style="float:right">New User?<a href="signup.html">SIGN UP!</a></li>
+        <li class="log" style="float:right">Existing user?<a href="loginpage.html">Log In</a></li>
+    </form>
+</div>
+     <div class="nav">
+         <ul>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#about">About Us</a></li>
+         <li><a href="#fashion">Fashion</a></li>
+         <li><a href="#herbs">Herbs</a></li>
+         <li><a href="#form">go to form</a></li>
+         <li style="float:right"><a href="#footer">Jump to bottom</a></li>
+         </ul>
+         </div>
+     <body>
+         <div class="product-container">
+         <h3 id="herbs"><b>Types Of Herbs</b></h3>
+         <ul><strong>
+         <li>Sativa</li>
+         <li>Indica</li>
+         <li>Marijuana</li>
+         <li>Zoots</li>
+         <li>Sage</li>
+         <li>Stog</li>
+         </strong>
+     </ul>
+
+     <h3 id="fashion"><b>Types of Clothings</b></h3>
+     <ol><strong>
+         <li>Ankara</li>
+         <li>Lace</li>
+         <li>Dansiki</li>
+         <li>Senator</li>
+         <li>Aso Oke</li>
+         <li>Material</li>
+         <li>Chinos</li>
+         <li>Jeans</li>
+         <li>Khaki</li>
+     </strong>
+     </ol>
+     </div>
+     <h4 id="form"><b>Kindly complete the survey below!</b></h>
+     <form id="contact-form" style="background-color: gray;">
+         <div class="form-group">
+             <label id="name-label" for="name" style="font-size:medium ;color:black"><b>Name </b><span class="clue">(Preferrably Nickname)</span></label><br>
+             <input type="form" name="name" id="name" class="form-control" 
+             placeholder="Enter your name" required>
+         </div>
+         <div class="form-group">
+             <label id="email-label" for="email" style="font-size:medium ;color:black"><b>Email </b><span class="clue">(ex.s8n@satan.com)</span></label><br>
+             <input type="form" name="email" id="email" class="form-control"
+             placeholder="What's your email" >
+         </div>
+         <div class="form-group">
+             <label id="number-label" for="number" style="font-size:medium ;color:black"><b> Age </b><span class="clue">(must be 18+)</span></label><br>
+             <input type="form" name="age" id="number" min="00" max="99" class="form-control" 
+             placeholder="Age" required>
+         </div>
+         <div class="form-group">
+             <p><strong>Which option best describes your level</strong></p>
+                 <select id="dropdown" name="level" class="form-control" required>
+                     <option disable selected value>select level</option>
+                     <option value="novice">Eba</option>
+                     <option value="amateur">Straight</option>
+                     <option value="medium">Tiny</option>
+                     <option value="senior">Jombo</option>
+                     <option value="master">Perfect cone</option>
+                     <option value="maybe">Prefer not to say</option>
+                     <option value="other">Other</option>
+                 </select>
+         </div>
+         <div class="form-group">
+             <p><strong>Would you recommend high to anyone?</strong></p>
+             <label>
+                 <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely
+             </label>
+             <label>
+                 <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+             </label>
+             <label>
+                 <input name="user-recommend" value="Absolutely not" type="radio" class="input-radio">Absolutely Not
+             </label>
+         </div>
+         <div class="form-group">
+             <p><strong>What is your preferred flavour?</strong></p>
+             <select style="background-color:gainsboro;" id="most-like" name="mostlike" class="form-group" required>
+                 <option disable selected value>select an option</option>
+                 <option value="sk">Skunk</option>
+                 <option value="az">Arizona</option>
+                 <option value="loud">Loud</option>
+                 <option value="colos">Colorado</option>
+                 <option value="mamba">Mamba</option>
+             </select>
+         </div>
+         <div class="form-group">
+             <p><strong>What type of high do you prefer?</strong></p>
+             <span class="clue">[Check the box(es) below]</span><br>
+             <label>
+                 <input name="prefer" value="maryjane" type="checkbox" class="input-checkbox">Maryjane
+             </label><br>
+             <label>
+                 <input name="prefer" value="bong" type="checkbox" class="input-checkbox">Bongs
+             </label><br>
+             <label>
+                 <input name="prefer" value="ck" type="checkbox" class="input-checkbox">Crack
+             </label><br>
+             <label>
+                 <input name="prefer" value="ice" type="checkbox" class="input-checkbox">Meth
+             </label><br>
+             <label>
+                <input name="prefer" value="molly" type="checkbox" class="input-checkbox">Happy Pills
+             </label><br>
+             <label>
+                 <input name="prefer" value="stog" type="checkbox" class="input-checkbox">Cigarettes
+             </label><br>
+             <label>
+                 <input name="prefer" value="alcohol" type="checkbox" class="input-checkbox">Alcohol
+             </label><br>
+             <label>
+                 <input name="prefer" value="other" type="checkbox" class="input-checkbox">Others
+             </label><br>
+         </div>
+         <div class="form-group">
+             <p><strong>Comments and Free advice</strong></p>
+             <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter comments here"></textarea>
+         </div>
+         <div class="form-group">
+             <button type="submit" class="submit-button" id="submit">Submit</button>
+         </div>
+     </form>
+     <br>
+     <br>
+     <p><strong>When do you prefer to get high everyday?</strong></p>
+     <table>
+         <thead>
+         <tr>
+             <th>Day/Time </th>
+             <th>Sun</th>
+             <th>Mon</th>
+             <th>Tue</th>
+             <th>Wed</th>
+             <th>Thu</th>
+             <th>Fri</th>
+             <th>Sat</th>
+         </tr>
+         </thead>
+            <tr><td>Morning</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr><td>Afternoon</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr><td>Evening</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr><td>Midnight</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr><td>Dawn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+         </tr>
+     </table>
+     <br>
+    <footer id="footer">
+        <div class="dropdown">
+            <button class="dropbtn">Our Social Media</button>
+            <div class="dropdown-cnt">
+                <a href="#twt">Twitter</a>
+                <a href="#lkd">LinkedIn</a>
+                <a href="#ig">Instaram</a>
+                <a href="#fb">Facebook</a>
+                <a href="#mail">Email</a>
+            </div>
+        </div>
+        <p>@S8nclone, 2022</p>
+    </footer>
+     
+</body>
+</html>

@@ -1,0 +1,54 @@
+html{
+    background-color: lightgreen;
+}
+form{
+    background-color: lawngreen;
+    color:black;
+    width:50%;
+    height: 80%;
+    border-style: outset;
+    border-radius: 10px;
+    border-color: gold;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: large;
+    text-align: center;
+}
+h4 {
+    text-transform: uppercase;
+    font-size:large;
+}
+#id {
+    font-style: oblique;
+    font-size: medium;
+}
+.form-control{
+    display:inline-block;
+    width:40%;
+    border-bottom:2px double peru;
+    box-sizing: border-box;
+    padding:10px;
+    margin:5px;
+}
+.form-control:focus{
+    background-color: lightgreen;
+    color:goldenrod;
+    font-style: italic;
+}
+#submit{
+    border-color:darkgreen;
+    color:gold;
+    border-style: none;
+    border-radius: 15px 20px;
+    padding:15px 40px;
+    margin:10px 40px;
+    cursor:pointer;
+    display:block;
+    font-size:15px;
+    text-align: center;
+    transition: 0.5s;
+}
+#submit:hover {
+    background-color: darkgreen;
+}

@@ -1,0 +1,109 @@
+html{
+    background-color:forestgreen;
+    box-sizing:border-box;
+    color:darkorange;
+    margin:5px;
+}
+h2{
+    text-align: left;
+    margin:10px 60px;
+    text-transform:uppercase;
+    font-size:20px;
+    color:gold;
+}
+h3{
+    text-align: left;
+    text-transform: capitalize;
+    font-size: large;
+    color:goldenrod;
+    margin:10px 80px;
+}
+h4{
+    background-color:darkorange;
+    border-left:8px groove;
+    font-size: 20px;
+    color:black;
+    width:fit-content;
+    padding:8px;
+    margin:10px;
+    border-radius: 5px 8px;
+}
+.form-control{
+    width:40%;
+    border:none;
+    border-bottom:4px double crimson;
+    display:inline-block;
+    box-sizing: border-box;
+    padding:10px;
+    margin:5px 10px;
+    border-radius: 5px 10px;
+}
+.form-control:focus{
+    background-color:lightgreen;
+    color:goldenrod;
+}
+#bio,#about,#experience,#conclude {
+    box-sizing: border-box;
+    width:80%;
+    height:80%;
+    border-style:outset;
+    border-color:crimson;
+    border-radius:10px 15px;
+}
+.form-group{
+    width:40%;
+    border:none;
+    border-bottom:4px double crimson;
+    display:inline-block;
+    box-sizing: border-box;
+    padding:10px;
+    margin:5px 10px;
+    border-radius: 5px 10px;
+}
+.form-group:focus{
+    background-color:lightgreen;
+    color:goldenrod;
+}
+.input-textarea{
+    width:50%;
+    height:200%;
+    border:2px dotted darkorange;
+    padding:20px 20px;
+    margin:10px;
+    box-sizing: border-box;
+    border-radius:5px 8px;
+    background-color: #f8f8f8;
+    resize:both;
+    transition: 0.5s;
+}
+textarea:focus{
+    background-color:lightgreen;
+    color:orange;
+}
+textarea#conclude{
+    width:70%;
+    height:200%;
+    border:2px dotted darkorange;
+    padding:40px 60px;
+    box-sizing: border-box;
+    border-radius:5px 8px;
+    background-color: #f8f8f8;
+    resize:both;
+}
+
+#submit{
+    border-color:darkgreen;
+    color:gold;
+    border-style: none;
+    border-radius: 15px 20px;
+    padding:15px 60px;
+    margin:5px 250px;
+    cursor:pointer;
+    display:block;
+    font-size:15px;
+    text-align: center;
+    transition: 0.5s;
+}
+.class-control:hover{
+    background-color: orange;
+}
