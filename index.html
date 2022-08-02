@@ -10,12 +10,12 @@
 </head>
 <div class="container">
     <header class="headline">
-     <h1 title="My First Project" class="text-center" style="color:gold"><b>Vampire Smoke & Fashion</b></h1>
+     <h1 title="My First Project" class="text-center" style="color:rgb(31, 112, 31)"><b>Vampire Smoke & Fashion</b></h1>
      <p id="description" class="description text-center"><strong>All About Fashion and Herbs</strong></p> 
      </header>
      </div>
-     <div class="top-page" style="background-color: olivedrab; ">
-     <form><input type="text" name="searcbar" id="search" class="searchbar" placeholder="Enter your search">
+     <div class="top-page" style="background-color: rgb(38, 109, 31); ">
+     <form><input type="text" name="searchbar" id="search" class="searchbar" placeholder="Enter your search">
         <li class="log" style="float:right">New User?<a href="signup.html">SIGN UP!</a></li>
         <li class="log" style="float:right">Existing user?<a href="loginpage.html">Log In</a></li>
     </form>
@@ -47,7 +47,7 @@
      <ol><strong>
          <li>Ankara</li>
          <li>Lace</li>
-         <li>Dansiki</li>
+         <li>Dashiki</li>
          <li>Senator</li>
          <li>Aso Oke</li>
          <li>Material</li>
@@ -57,21 +57,60 @@
      </strong>
      </ol>
      </div>
-     <h4 id="form"><b>Kindly complete the survey below!</b></h>
+     <main id="main">
+        <div>
+            <p><label for="sleeves"><strong>How do you want your fit?</strong></label></p>
+            <input list="sleeves"  id="styling" name="styles">
+            <datalist id="sleeves">
+                <option value="Short Sleeved">
+                <option value="Long Sleeved">
+                <option value="Half Arm">
+            </datalist>
+        </div>
+
+        <div>
+            <p><strong>Choose Neck Style</strong></p>
+            <label>
+                <input name="collar" value="collar" type="radio" class="input-radio" checked>Regular Collar
+            </label><br>
+            <label>
+                <input name="collar" value="scollar" type="radio" class="input-radio" checked>Short Collar
+            </label><br>
+            <label>
+                <input name="collar" value="rcollar" type="radio" class="input-radio" checked>Round Neck
+            </label>
+        </div>
+
+        <div>
+            <p><label for="pants"><strong>How should your pants fit?</strong></label></p>
+            <input list="pants"  id="styling" name="styles">
+            <datalist id="pants" >
+                <option value="Fitted">
+                <option value="Straight Pants">
+                <option value="bell Bottom">
+                <option value="Baggy pants">
+                </datalist>
+        </div>
+     </main>
+    <article id="main">
+     <h4 id="form"><strong>Kindly complete the survey below!</strong></h>
      <form id="contact-form" style="background-color: gray;">
          <div class="form-group">
-             <label id="name-label" for="name" style="font-size:medium ;color:black"><b>Name </b><span class="clue">(Preferrably Nickname)</span></label><br>
+             <label id="name-label" for="name" style="font-size:medium ;color:black">
+                <b>Name </b><span class="clue">(Preferably Nickname)</span></label><br>
              <input type="form" name="name" id="name" class="form-control" 
              placeholder="Enter your name" required>
          </div>
          <div class="form-group">
-             <label id="email-label" for="email" style="font-size:medium ;color:black"><b>Email </b><span class="clue">(ex.s8n@satan.com)</span></label><br>
+             <label id="email-label" for="email" style="font-size:medium ;color:black">
+                <b>Email </b><span class="clue">(ex.s8n@satan.com)</span></label><br>
              <input type="form" name="email" id="email" class="form-control"
              placeholder="What's your email" >
          </div>
          <div class="form-group">
-             <label id="number-label" for="number" style="font-size:medium ;color:black"><b> Age </b><span class="clue">(must be 18+)</span></label><br>
-             <input type="form" name="age" id="number" min="00" max="99" class="form-control" 
+             <label id="number-label" for="number" style="font-size:medium ;color:black">
+                <b> Age </b><span class="clue">(must be 18+)</span></label><br>
+             <input type="form" name="age" id="number" min="18" max="99" class="form-control" 
              placeholder="Age" required>
          </div>
          <div class="form-group">
@@ -81,7 +120,7 @@
                      <option value="novice">Eba</option>
                      <option value="amateur">Straight</option>
                      <option value="medium">Tiny</option>
-                     <option value="senior">Jombo</option>
+                     <option value="senior">Jumbo</option>
                      <option value="master">Perfect cone</option>
                      <option value="maybe">Prefer not to say</option>
                      <option value="other">Other</option>
@@ -114,38 +153,41 @@
              <p><strong>What type of high do you prefer?</strong></p>
              <span class="clue">[Check the box(es) below]</span><br>
              <label>
-                 <input name="prefer" value="maryjane" type="checkbox" class="input-checkbox">Maryjane
-             </label><br>
+                 <input name="prefer" value="maryjane" type="checkbox" class="input-checkbox">
+                 Maryjane</label><br>
              <label>
-                 <input name="prefer" value="bong" type="checkbox" class="input-checkbox">Bongs
-             </label><br>
+                 <input name="prefer" value="bong" type="checkbox" class="input-checkbox">
+                 Bongs</label><br>
              <label>
-                 <input name="prefer" value="ck" type="checkbox" class="input-checkbox">Crack
-             </label><br>
+                 <input name="prefer" value="ck" type="checkbox" class="input-checkbox">
+                 Crack</label><br>
              <label>
-                 <input name="prefer" value="ice" type="checkbox" class="input-checkbox">Meth
-             </label><br>
+                 <input name="prefer" value="ice" type="checkbox" class="input-checkbox">
+                 Meth</label><br>
              <label>
-                <input name="prefer" value="molly" type="checkbox" class="input-checkbox">Happy Pills
-             </label><br>
+                <input name="prefer" value="molly" type="checkbox" class="input-checkbox">
+                Happy Pills</label><br>
              <label>
-                 <input name="prefer" value="stog" type="checkbox" class="input-checkbox">Cigarettes
-             </label><br>
+                 <input name="prefer" value="stog" type="checkbox" class="input-checkbox">
+                 Cigarettes</label><br>
              <label>
-                 <input name="prefer" value="alcohol" type="checkbox" class="input-checkbox">Alcohol
-             </label><br>
+                 <input name="prefer" value="alcohol" type="checkbox" class="input-checkbox">
+                 Alcohol</label><br>
              <label>
-                 <input name="prefer" value="other" type="checkbox" class="input-checkbox">Others
-             </label><br>
+                 <input name="prefer" value="other" type="checkbox" class="input-checkbox">
+                 Others</label><br>
          </div>
          <div class="form-group">
              <p><strong>Comments and Free advice</strong></p>
-             <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter comments here"></textarea>
+             <textarea id="comments" class="input-textarea" name="comments" 
+             placeholder="Enter comments here"></textarea>
          </div>
          <div class="form-group">
              <button type="submit" class="submit-button" id="submit">Submit</button>
          </div>
-     </form>
+        </form>
+    </article>
+     
      <br>
      <br>
      <p><strong>When do you prefer to get high everyday?</strong></p>
@@ -216,7 +258,7 @@
             <div class="dropdown-cnt">
                 <a href="#twt">Twitter</a>
                 <a href="#lkd">LinkedIn</a>
-                <a href="#ig">Instaram</a>
+                <a href="#ig">Instagram</a>
                 <a href="#fb">Facebook</a>
                 <a href="#mail">Email</a>
             </div>
