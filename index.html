@@ -29,85 +29,91 @@
         </div>
 
         <nav>
-            <div class="nav">
+            <div class="nav-btn">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#fashion">Fashion</a></li>
                     <li><a href="#sports">Sports</a></li>
-                    <li><a href="#form">go to form</a></li>
-                    <li style="float:right"><a href="#footer">Jump to bottom</a></li>
+                    <li><a href="#form">go to form</a></li>   
                 </ul>
             </div>
         </nav>
     </header>
 
-<main id="main">
+<main id="main"> 
+    <a href="#footer"style="float:right" >Jump to bottom</a>
         <div class="product-container">
-            <h3 id="sports"><b>Some popular sports</b></h3>
-            <ul><strong>
-                    <li>Football</li>
-                    <li>Rugby</li>
-                    <li>Basketball</li>
-                    <li>Formula 1</li>
-                    <li>Tennis</li>
-                    <li>Golf</li>
-                </strong>
-            </ul>
+            <div>
+                <h3 id="sports"><b>Some popular sports</b></h3>
+                <ul><strong>
+                        <li>Football</li>
+                        <li>Rugby</li>
+                        <li>Basketball</li>
+                        <li>Formula 1</li>
+                        <li>Tennis</li>
+                        <li>Golf</li>
+                    </strong>
+                </ul>
+            </div>
+
+            <div>
+                <h3 id="fashion"><b>Types of Clothings</b></h3>
+                <ol><strong>
+                        <li>Ankara</li>
+                        <li>Lace</li>
+                        <li>Dashiki</li>
+                        <li>Senator</li>
+                        <li>Aso Oke</li>
+                        <li>Material</li>
+                        <li>Chinos</li>
+                        <li>Jeans</li>
+                        <li>Khaki</li>
+                    </strong>
+                </ol>
+            </div>
         </div>
 
-        <div>
-            <h3 id="fashion"><b>Types of Clothings</b></h3>
-            <ol><strong>
-                    <li>Ankara</li>
-                    <li>Lace</li>
-                    <li>Dashiki</li>
-                    <li>Senator</li>
-                    <li>Aso Oke</li>
-                    <li>Material</li>
-                    <li>Chinos</li>
-                    <li>Jeans</li>
-                    <li>Khaki</li>
-                </strong>
-            </ol>
-        </div>
-     
-        <div>
-            <p><label for="sleeves"><strong>How do you want your fit?</strong></label></p>
-            <input list="sleeves"  id="styling" name="styles">
-                <datalist id="sleeves">
-                    <option value="Short Sleeved">
-                    <option value="Long Sleeved">
-                    <option value="Half Arm">
-                </datalist>
-        </div>
-
-        <div>
-            <p><strong>Choose Neck Style</strong></p>
-            <label>
-                <input name="collar" value="collar" type="radio" class="input-radio" checked>Regular Collar
-            </label>
+        <div class="style">    
+            <div>
+                <p><label for="sleeves"><strong>How do you want your fit?</strong></label></p>
+                <input list="sleeves"  id="styling" name="styles">
+                    <datalist id="sleeves">
+                        <option value="Short Sleeved">
+                        <option value="Long Sleeved">
+                        <option value="Half Arm">
+                    </datalist>
+            </div>
             <br>
-            <label>
-                <input name="collar" value="scollar" type="radio" class="input-radio" checked>Short Collar
-            </label>
-            <br>
-            <label>
-                <input name="collar" value="rcollar" type="radio" class="input-radio" checked>Round Neck
-            </label>
-        </div>
 
-        <div>
-            <p><label for="pants"><strong>How should your pants fit?</strong></label></p>
-            <input list="pants"  id="styling" name="styles">
-                <datalist id="pants" >
-                    <option value="Fitted">
-                    <option value="Straight Pants">
-                    <option value="bell Bottom">
-                    <option value="Baggy pants">
-                </datalist>
-        </div>
-     
+            <div>
+                <p><strong>Choose Neck Style</strong></p>
+                <label>
+                    <input name="collar" value="collar" type="radio" class="input-radio" checked>Regular Collar
+                </label>
+                <br>
+                <label>
+                    <input name="collar" value="scollar" type="radio" class="input-radio" checked>Short Collar
+                </label>
+                <br>
+                <label>
+                    <input name="collar" value="rcollar" type="radio" class="input-radio" checked>Round Neck
+                </label>
+            </div>
+            <br>
+
+            <div>
+                <p><label for="pants"><strong>How should your pants fit?</strong></label></p>
+                <input list="pants"  id="styling" name="styles">
+                    <datalist id="pants" >
+                        <option value="Fitted">
+                        <option value="Straight Pants">
+                        <option value="bell Bottom">
+                        <option value="Baggy pants">
+                    </datalist>
+            </div>
+        </div> 
+
         <article id="main">
             <h4 id="form"><strong>Kindly complete the survey below!</strong></h>
             <form id="contact-form">
