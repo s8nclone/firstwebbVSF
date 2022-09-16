@@ -112,133 +112,136 @@
                         <option value="Baggy pants">
                     </datalist>
             </div>
-        </div> 
+        </div>  
+        
+        <form id="form" class="contact-form">
+            <article>
+                <h4><strong>Kindly complete the survey below!</strong></h4>
+            
+                    <div class="form-group nick">
+                        <label id="name-label" for="name">
+                            <strong>Name :</strong><span class="clue">(Preferably Nickname)</span>
+                        </label>
+                        <br>
+                        <input type="form" name="name" id="name" class="form-info" 
+                        placeholder="Enter your name" required>
+                    </div>
 
-        <article id="main">
-            <h4 id="form"><strong>Kindly complete the survey below!</strong></h>
-            <form id="contact-form">
-                <div class="form-group nick">
-                    <label id="name-label" for="name">
-                        <b>Name </b><span class="clue">(Preferably Nickname)</span>
-                    </label>
-                    <br>
-                    <input type="form" name="name" id="name" class="form-control" 
-                    placeholder="Enter your name" required>
-                </div>
+                    <div class="form-group mail">
+                        <label id="email-label" for="email">
+                            <strong>Email :</strong><span class="clue">(ex.s8n@satan.com)</span>
+                        </label>
+                        <br>
+                        <input type="form" name="email" id="email" class="form-info"
+                        placeholder="What's your email" required>
+                    </div>
 
-                <div class="form-group mail">
-                    <label id="email-label" for="email">
-                        <b>Email </b><span class="clue">(ex.s8n@satan.com)</span>
-                    </label>
-                    <br>
-                    <input type="form" name="email" id="email" class="form-control"
-                    placeholder="What's your email" required>
-                </div>
+                    <div class="form-group age">
+                        <label id="number-label" for="number">
+                            <strong> Age :</strong><span class="clue">(must be 18+)</span>
+                        </label>
+                        <br>
+                        <input type="number" name="age" id="number" min="18" max="99" class="form-age" 
+                        placeholder="Age" >
+                    </div>
 
-                <div class="form-group age">
-                    <label id="number-label" for="number">
-                        <b> Age </b><span class="clue">(must be 18+)</span>
-                    </label>
-                    <br>
-                    <input type="form" name="age" id="number" min="18" max="99" class="form-control" 
-                    placeholder="Age" >
-                </div>
+                    <div class="form-group league">
+                        <p><strong>What Football league do you watch the most?</strong></p>
+                            <select id="dropdown" name="level" class="form-control" required>
+                                <option disable selected value>select level</option>
+                                <option value="Premier">Premier League</option>
+                                <option value="liga">La Liga</option>
+                                <option value="seria">Seria A</option>
+                                <option value="ligue">Ligue 1</option>
+                                <option value="dutch">Eredivise</option>
+                                <option value="naija">Nigerian league</option>
+                                <option value="other">Other</option>
+                            </select>
+                    </div>
 
-                <div class="form-group league">
-                    <p><strong>What Football league do you watch the most?</strong></p>
-                        <select id="dropdown" name="level" class="form-control" required>
-                            <option disable selected value>select level</option>
-                            <option value="Premier">Premier League</option>
-                            <option value="liga">La Liga</option>
-                            <option value="seria">Seria A</option>
-                            <option value="ligue">Ligue 1</option>
-                            <option value="dutch">Eredivise</option>
-                            <option value="naija">Nigerian league</option>
-                            <option value="other">Other</option>
+                    <div class="form-group rugby">
+                        <p><strong>Would you recommend Rugby to anyone?</strong></p>
+                        <label>
+                            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely
+                        </label>
+                        <label>
+                            <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+                        </label>
+                        <label>
+                            <input name="user-recommend" value="Absolutely not" type="radio" class="input-radio">Absolutely Not
+                        </label>
+                    </div>
+
+                    <div class="form-group competition">
+                        <p><strong>What is your preferred competition?</strong></p>
+                        <select id="most-like" name="mostlike" class="form-group" required>
+                            <option disable selected value>select an option</option>
+                            <option value="uefacl">Champions League</option>
+                            <option value="europa">Europa League</option>
+                            <option value="super">Super League</option>
+                            <option value="clubwc">Club world Cup</option>
+                            <option value="fifa"> FIFA World Cup</option>
                         </select>
-                </div>
+                    </div>
 
-                <div class="form-group rugby">
-                    <p><strong>Would you recommend Rugby to anyone?</strong></p>
-                    <label>
-                        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely
-                    </label>
-                    <label>
-                        <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
-                    </label>
-                    <label>
-                        <input name="user-recommend" value="Absolutely not" type="radio" class="input-radio">Absolutely Not
-                    </label>
-                </div>
+                    <div class="form-group clubs">
+                        <p><strong>What team do you root for wholeheartedly?</strong></p>
+                        <span class="clue">[Check the box(es) below]</span><br>
+                        <label>
+                            <input name="prefer" value="rcf" type="checkbox" class="input-checkbox">
+                            Real Madrid CF
+                        </label>
+                        <br>
+                        <label>
+                            <input name="prefer" value="manu" type="checkbox" class="input-checkbox">
+                            Manchester united FC
+                        </label>
+                        <br>
+                        <label>
+                            <input name="prefer" value="psg" type="checkbox" class="input-checkbox">
+                            Paris saint German
+                        </label>
+                        <br>
+                        <label>
+                            <input name="prefer" value="mancity" type="checkbox" class="input-checkbox">
+                            Mancester City FC
+                        </label>
+                        <br>
+                        <label>
+                            <input name="prefer" value="lfc" type="checkbox" class="input-checkbox">
+                            Liverpool FC
+                        </label>
+                        <br>
+                        <label>
+                            <input name="prefer" value="blues" type="checkbox" class="input-checkbox">
+                            Chelsea FC
+                        </label>
+                        <br>
+                        <label>
+                            <input name="prefer" value="barca" type="checkbox" class="input-checkbox">
+                            Barcelona
+                        </label>
+                        <br>
+                        <label>
+                            <input name="prefer" value="other" type="checkbox" class="input-checkbox">
+                            Others
+                        </label>
+                        <br>
+                    </div>
 
-                <div class="form-group competition">
-                    <p><strong>What is your preferred competition?</strong></p>
-                    <select id="most-like" name="mostlike" class="form-group" required>
-                        <option disable selected value>select an option</option>
-                        <option value="uefacl">Champions League</option>
-                        <option value="europa">Europa League</option>
-                        <option value="super">Super League</option>
-                        <option value="clubwc">Club world Cup</option>
-                        <option value="fifa"> FIFA World Cup</option>
-                    </select>
-                </div>
-                <div class="form-group clubs">
-                    <p><strong>What team do you root for wholeheartedly?</strong></p>
-                    <span class="clue">[Check the box(es) below]</span><br>
-                    <label>
-                        <input name="prefer" value="rcf" type="checkbox" class="input-checkbox">
-                        Real Madrid CF
-                    </label>
+                    <div class="form-group comment">
+                        <p><strong>Comments and Free advice</strong></p>
+                        <textarea id="comments" class="input-textarea" name="comments" 
+                        placeholder="Enter comments here"></textarea>
+                    </div>
                     <br>
-                    <label>
-                        <input name="prefer" value="manu" type="checkbox" class="input-checkbox">
-                        Manchester united FC
-                    </label>
-                    <br>
-                    <label>
-                        <input name="prefer" value="psg" type="checkbox" class="input-checkbox">
-                        Paris saint German
-                    </label>
-                    <br>
-                    <label>
-                        <input name="prefer" value="mancity" type="checkbox" class="input-checkbox">
-                        Mancester City FC
-                    </label>
-                    <br>
-                    <label>
-                        <input name="prefer" value="lfc" type="checkbox" class="input-checkbox">
-                        Liverpool FC
-                    </label>
-                    <br>
-                    <label>
-                        <input name="prefer" value="blues" type="checkbox" class="input-checkbox">
-                        Chelsea FC
-                    </label>
-                    <br>
-                    <label>
-                        <input name="prefer" value="barca" type="checkbox" class="input-checkbox">
-                        Barcelona
-                    </label>
-                    <br>
-                    <label>
-                        <input name="prefer" value="other" type="checkbox" class="input-checkbox">
-                        Others
-                    </label>
-                    <br>
-                </div>
 
-                <div class="form-group comment">
-                    <p><strong>Comments and Free advice</strong></p>
-                    <textarea id="comments" class="input-textarea" name="comments" 
-                    placeholder="Enter comments here"></textarea>
-                </div>
-
-                <div class="form-group submit">
                     <input type="submit" class="submit-button" id="submit" value="submit">
-                </div>
+                    
+            </article>
 
-            </form>
-        </article>
+        </form>
+        
         
         <br>
         <br>

@@ -6,7 +6,6 @@
 
 html {
     background-color: rgb(206, 207, 204);
-    width:100%;
 }
 
 .top-container {
@@ -114,6 +113,59 @@ html {
     color:green;
 }
 
+form {
+    background-color: bisque;
+    width:100%;
+    padding:5px;
+    font-size:18px;
+    clear: both;
+}
+
+form h4 {
+    color:green;
+    font-size:20px;
+}
+
+form div:last-of-type {
+    background-color: none;
+}
+
+form div {
+    border:2px inset greenyellow;
+    padding: 5px;
+    margin: 5px 0px;
+    background-color: antiquewhite;
+}
+
+form label>span {
+    font-size:15px;
+}
+
+form input.form-info {
+    width:70%;
+    height:25px;
+}
+
+form input.form-age {
+    height:20px;
+}
+
+textarea {
+    height:150px;
+    width:90%;
+    padding:5px;
+}
+
+input[type=submit] {
+    background-color: green;
+    color:white;
+    height:30px;
+    width:30%;
+    border-radius:6px;
+    /* padding:12px 45px; */
+    margin:5px 135px;
+    cursor: pointer;
+}
 /* .top-page{
     list-style-type: none;
     text-decoration: none;
