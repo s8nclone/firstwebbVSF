@@ -1,54 +1,77 @@
-html{
-    background-color: lightgreen;
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
+html{
+    background-color: beige;
+    
+}
+
 form{
-    background-color: lawngreen;
+    background-color: aqua;
     color:black;
-    width:50%;
-    height: 80%;
+    width: 600px;
+    height:600px;
     border-style: outset;
     border-radius: 10px;
     border-color: gold;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 30px;
 }
+
 h3 {
     text-transform: uppercase;
-    font-size: large;
+    font-size: 40px;
     text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
 }
+
 h4 {
     text-transform: uppercase;
-    font-size:large;
+    font-size:30px;
+    text-align: center;
+    margin-bottom: 10px;
 }
-#id {
-    font-style: oblique;
-    font-size: medium;
-}
+
 .form-control{
     display:inline-block;
-    width:40%;
+    width:50%;
     border-bottom:2px double peru;
     box-sizing: border-box;
     padding:10px;
     margin:5px;
 }
+
 .form-control:focus{
     background-color: lightgreen;
     color:goldenrod;
     font-style: italic;
 }
-#submit{
+
+.agree {
+    margin-top: 10px;
+}
+
+.submit{
     border-color:darkgreen;
     color:gold;
     border-style: none;
     border-radius: 15px 20px;
     padding:15px 40px;
-    margin:10px 40px;
+    margin: 0 auto;
+    margin-top: 20px;
     cursor:pointer;
     display:block;
-    font-size:15px;
+    font-size:25px;
     text-align: center;
     transition: 0.5s;
 }
-#submit:hover {
+
+.submit:hover {
     background-color: darkgreen;
 }
